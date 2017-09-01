@@ -1,5 +1,5 @@
 import buble from 'rollup-plugin-buble';
-// import uglify from 'rollup-plugin-uglify';
+import uglify from 'rollup-plugin-uglify';
 import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
 import filesize from 'rollup-plugin-filesize';
@@ -31,7 +31,7 @@ export default {
         NODE_ENV: 'production',
       }),
     }),
-    // uglify(),
+    uglify(),
     filesize(),
   ],
   output: [{ file: pkg.browser, format: 'umd' }],
