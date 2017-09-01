@@ -2,7 +2,7 @@
   "name": "jquery.promise",
   "version": "1.0.4",
   "description": "Promise implementation using jQuery",
-  "main": "dist/jquery.promise.common.js",
+  "main": "dist/jquery.promise.js",
   "browser": "dist/jquery.promise.js",
   "files": [
     "src",
@@ -12,7 +12,6 @@
     "build": "npm run build:umd",
     "build:umd": "rollup -c rollup.config.umd.js",
     "build:umd:watch": "npm run build:umd -- -w",
-    "prepublish": "npm run build",
     "lint": "eslint --ext .js .",
     "lint:fix": "eslint --ext .js . --fix",
     "hot": "poi playground/index.js"
