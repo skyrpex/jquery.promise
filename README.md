@@ -1,6 +1,6 @@
 # jquery.promise
 
-Lighweight promise implementation using jQuery.
+Lighweight promise implementation using jQuery (1.26 KB, 456 B gzipped).
 
 ## Installation
 
