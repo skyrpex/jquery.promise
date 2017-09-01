@@ -12,11 +12,16 @@ const promise1s = new Promise(resolve => {
 });
 promise1s.then(() => console.log('1s'));
 
+const promise2s = new Promise((resolve, reject) => {
+  setTimeout(reject, 2000);
+});
+
 const promise3s = new Promise(resolve => {
   setTimeout(resolve, 3000);
 });
 promise3s.then(() => console.log('3s'));
 
-Promise.all([promise1s, promise3s]).then(() => {
-  console.log('all');
-});
+Promise.all([promise1s, promise2s, promise3s]).then(
+  () => console.log('all resolved'),
+  () => console.log('rejected')
+);
