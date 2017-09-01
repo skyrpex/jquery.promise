@@ -1,6 +1,5 @@
-import json from 'rollup-plugin-json';
 import buble from 'rollup-plugin-buble';
-import uglify from 'rollup-plugin-uglify';
+// import uglify from 'rollup-plugin-uglify';
 import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
 import filesize from 'rollup-plugin-filesize';
@@ -17,7 +16,6 @@ export default {
     jquery: 'jQuery',
   },
   plugins: [
-    json(),
     resolve({
       browser: true,
       preferBuiltins: false,
@@ -33,7 +31,7 @@ export default {
         NODE_ENV: 'production',
       }),
     }),
-    uglify(),
+    // uglify(),
     filesize(),
   ],
   output: [{ file: pkg.browser, format: 'umd' }],
