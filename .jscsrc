@@ -1,0 +1,9 @@
+{
+  "preset": "airbnb",
+  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+  "requirePaddingNewLinesBeforeLineComments": false,
+  "requirePaddingNewLinesAfterBlocks": false,
+  "disallowSemicolons": true,
+  "requireSemicolons": false,
+  "safeContextKeyword": false
+}

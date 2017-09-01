@@ -1,0 +1,20 @@
+{
+  "name": "jquery.promise",
+  "version": "1.0.4",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:umd": "rollup -c -f umd -o dist/jquery.promise.js",
+    "build:cjs": "rollup -c -f cjs -o lib/index.js",
+    "build": "npm run build:umd & npm run build:cjs",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian Pallarés <cristian@pallares.io>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "rollup": "^0.25.7",
+    "rollup-plugin-babel": "^2.4.0"
+  }
+}
