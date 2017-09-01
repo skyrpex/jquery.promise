@@ -1,6 +1,6 @@
 {
   "name": "jquery.promise",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Promise implementation using jQuery",
   "main": "dist/jquery.promise.js",
   "browser": "dist/jquery.promise.js",
