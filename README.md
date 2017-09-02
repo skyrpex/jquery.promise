@@ -25,7 +25,7 @@ Using a script tag:
 
 ```html
 <script>
-  const promise = $.Promise((resolve, reject) => {
+  const promise = new $.Promise((resolve, reject) => {
     setTimeout(resolve, 1000);
   });
 </script>
